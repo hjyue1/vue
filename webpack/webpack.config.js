@@ -3,7 +3,9 @@ const configs = require('./base.config')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const config = require('../config.js');
 const extract = new ExtractTextPlugin('css/[name].[hash].css')
 const autoprefixer = require('autoprefixer')({ browsers: ['last 2 version'] })
 const IS_ENV = process.env.NODE_ENV == 'production'
@@ -23,9 +25,9 @@ if (IS_ENV) {
 }
 
 module.exports = {
-    target: 'web',
     entry: {
-        main: ['babel-polyfill', './src/main.js']
+		config: './config.js',
+        main: ['babel-polyfill', './src/index.js']
     },
     output: {
         filename: 'js/[name].[hash].js',
@@ -36,7 +38,8 @@ module.exports = {
         rules: [
             {
               test: /\.js$/,
-              use: ['babel-loader']
+              use: ['babel-loader'],
+              exclude: /node_modules/,
             },
             {
               test: /\.vue$/,
@@ -122,9 +125,11 @@ module.exports = {
             'stores': path.resolve(__dirname, '../src/stores/'), //常用工具方法
             'containers' :  path.resolve(__dirname, '../src/containers/'),
             'conponent' :  path.resolve(__dirname, '../src/conponent/'),
-            'lesses' :  path.resolve(__dirname, '../src/lesses/')
+            'lesses' :  path.resolve(__dirname, '../src/lesses/'),
+            'constants': path.resolve(__dirname, '../src/constants/'),
+            'helpers': path.resolve(__dirname, '../src/helpers/')
         },
         extensions: ['.js', '.vue', '.json', '.less', '.css']
     }, 
-    devtool: IS_ENV ? false : '#cheap-module-eval-source-map'
+    devtool: IS_ENV ? false : 'eval'
 }

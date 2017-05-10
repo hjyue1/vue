@@ -1,0 +1,30 @@
+
+export const YUN = window.WPS_CONFIG.YUN_HOST
+export const DRIVE = window.WPS_CONFIG.DRIVE_HOST
+export const DRIVE_MOBILE = window.WPS_CONFIG.DRIVE_MOBILE_HOST
+export const ACCOUNT = window.WPS_CONFIG.ACCOUNT_HOST
+export const CONTACTS = window.WPS_CONFIG.CONTACTS_HOST
+export const STORE = window.WPS_CONFIG.STORE_HOST
+export const OMS = window.WPS_CONFIG.OMS_HOST
+export const KMO = window.WPS_CONFIG.KMO_HOST
+export const KSYUN = window.WPS_CONFIG.KSYUN_HOST
+export const SECUR = window.WPS_CONFIG.SECUR_HOST
+export const PORTAL = window.WPS_CONFIG.PORTAL_HOST
+export const PREVIEW = window.WPS_CONFIG.PREVIEW_HOST
+export const RONG_NAVI = window.WPS_CONFIG.RONG_NAVI_HOST
+export const RONG_API = window.WPS_CONFIG.RONG_API_HOST
+export const RONG_YUN = window.WPS_CONFIG.RONG_YUN_HOST
+export const DOMAIN = window.WPS_CONFIG.DOMAIN
+export const IS_PRIVATIZATION = window.WPS_CONFIG.IS_PRIVATIZATION
+export const MAX_GROUP_MEMBERS = window.WPS_CONFIG.MAX_GROUP_MEMBERS
+export const MAX_DISPLAY_CONVERSATION_COUNT = window.WPS_CONFIG.MAX_DISPLAY_CONVERSATION_COUNT
+
+export const UPLOAD_THREAD_COUNT = window.WPS_CONFIG.UPLOAD_THREAD_COUNT //上传文档的线程数
+export const CUSTOM_LINK_TEXT = window.WPS_CONFIG.CUSTOM_LINK_TEXT //“退出”上方的自定义链接的显示文本
+export const CUSTOM_LINK_URL = window.WPS_CONFIG.CUSTOM_LINK_URL //“退出”上方的自定义链接的URL
+export const IS_SHOW_CREATE_TXT = window.WPS_CONFIG.IS_SHOW_CREATE_TXT //是否显示“新建文本文档”入口
+export const NO_PERMISSION_CAPTURE_SCREEN = window.WPS_CONFIG.NO_PERMISSION_CAPTURE_SCREEN //预览页面中，无编辑权限预览时是否禁止截屏
+export const NO_PERMISSION_PRINT = window.WPS_CONFIG.NO_PERMISSION_PRINT //预览页面中，无编辑权限预览时是否禁止打印
+export const FILE_IS_IMAGE_SHOW = window.WPS_CONFIG.FILE_IS_IMAGE_SHOW //消息列表文件消息如果是图片则展示开关
+export const FORBID_YIQIXIE = window.WPS_CONFIG.FORBID_YIQIXIE //是否禁用一起写功能，false为启用，true为禁用
+export const SHOW_ORGANIZATION = window.WPS_CONFIG.SHOW_ORGANIZATION //是否显示组织架构

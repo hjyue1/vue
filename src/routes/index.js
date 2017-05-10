@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import App from '../app'
 import Messages from 'containers/messages/'
 import Drive from 'containers/drive/'
-console.log('Messages')
+
 /**
  * 
  */
