@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const config = require('../config.js');
 const extract = new ExtractTextPlugin('css/[name].[hash].css')
 const autoprefixer = require('autoprefixer')({ browsers: ['last 2 version'] })
 const IS_ENV = process.env.NODE_ENV == 'production'
@@ -25,8 +24,8 @@ if (IS_ENV) {
 }
 
 module.exports = {
+	target: 'web',
     entry: {
-		config: './config.js',
         main: ['babel-polyfill', './src/index.js']
     },
     output: {
@@ -101,6 +100,12 @@ module.exports = {
         ]
     },
     plugins: [
+        new CopyWebpackPlugin([
+			{ 
+				from: path.resolve(__dirname, './config.js'),
+				to: path.resolve(__dirname, './dist/[name].js') 
+			}
+        ]),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/template/index.html'),
             filename: '../index.html',

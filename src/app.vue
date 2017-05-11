@@ -1,11 +1,25 @@
 <template>
-  <router-view></router-view>
+    <div class='drive-container'>
+        <header></header>
+        <router-view></router-view>
+    </div>
 </template>
 <script>
+    import { Promise } from 'es6-promise';
+    import { trim } from 'helpers';
+
+    import ua from 'helpers/ua';
+    import Header from './Header';
+
+
+
   export default {
     name: 'App',
     data () {
       return {}
+    },
+    components: {
+        Header
     },
     mounted () {
       this.appShow()

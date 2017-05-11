@@ -1,0 +1,91 @@
+export const LIGHT_LINK_NOT_EXIST  = "lightLinkNotExist"
+export const PERMISSION_DENIED = 'permissionDenied'
+export const NO_MORE_ADMIN = '您已不是团队拥有者或管理员'
+export const PERMISSION_DENIED_TEXT = "您的操作权限不足"
+
+export default {
+    'groupNumLimit': '您的5个免费团队数量已经用完，升级会员即可拥有创建无限个数团队和1T超大空间特权',
+    'illegalGroupName': '团队名不能包含下列字符： \\/;:*?"<>|%&',
+    'groupLengthTooLong': '团队名最多21个汉字或42个字母',
+    "userNotLogin": "用户未登录",
+
+    "noticeLengthTooLong":'团队公告最多300个汉字或600个字母',
+    "no permisson": NO_MORE_ADMIN,
+    'only team owner or manager can update group info' : NO_MORE_ADMIN,
+    "InvalidArgument": "提交的参数无效",
+    "ERR_SERVER_EXCEPTION": "服务器忙请稍后再试",
+    "ServerError": "服务器错误",
+    "LicenseNotFound": "帐号未授权",
+    "LicenseExpired": "帐号已过期",
+    [PERMISSION_DENIED]: PERMISSION_DENIED_TEXT,
+    'only team owner or manager can update group info' : PERMISSION_DENIED_TEXT,
+    
+    'parentUnRead' : '父目录不可见,修改权限失败',
+
+    "DomainExist": "域名已存在",
+    "CompanymMemberNotExist": "公司不存在",
+    "InvalidCompanyName": "公司名无效",
+    "CompanyNameTooLong": "公司名太长",
+    "UserAlreadyExists": "用户已存在",
+    "DeptNotEmpty": "部门非空",
+    "GroupMemberExists": "团队已存在此成员",
+    "GroupMemberLimit": "团队人数已达上限",
+    "groupLengthTooShort": "团队名至少2个汉字或4个字母",
+    "InvalidAccount": "请输入一个正确的邮箱/手机号",
+    "groupNotExist": "团队已不存在",
+    'teamLinkNotExist': '团队链接已不存在',
+    "notPersonalUser": "不能添加企业帐号",
+    "UserNotExists": "用户不存在",
+
+    "fileNameLengthExceed": "文件名不能超过96个字符",
+    "fileNameConflict": "存在同名文件",
+    "fileNotExists": "文件(夹)不存在",
+    "notGroupMember": "只有文件所在团队的成员可以打开",
+    "illegalTeam": "名字不能包含非法字符和特殊符号\\/;:*?\"<>|%&",
+    "illegalFname": "名字不能包含非法字符和特殊符号\\/;:*?\"<>|%&",
+    "fileNameEmpty": "文件名不能为空",
+    'moveFilePermission': '普通成员只能移动自己的文件',
+    'moveFileSelfPermission': '文件移动位置不变',
+
+    "lightLinkExist": "链接已存在",
+    [LIGHT_LINK_NOT_EXIST]: "链接不存在或已被重置",
+
+    //account
+    'MustHasOneBind': '至少保留一种登录方式',
+    'apiRateLimitExceede': '您的操作频率过快，请稍后重试',
+    'SMSLimitReached': '该手机申请验证码次数已超上限，请明天再试',
+    //'InvalidArgument': '必填字段',
+    'InvalidPhone': '手机格式不正确',
+    'PhoneAlreadyInUsed': '该手机已绑定其它账号，请换一个',
+    'CellPhoneAlreadyInUsed': '该手机已绑定其它账号，请换一个',
+    'InvalidEmail': '请输入正确格式的邮箱',
+    'EmailAlreadyInUsed': '该邮箱已绑定其它账号，请换一个',
+    'InvalidBindCode': '验证码错误',
+    'EmailAlreadyExists': '该邮箱已绑定其它账号，请换一个',
+    'must has an email account': '无法解绑，至少要有一个邮箱或手机账号，请先绑定邮箱再解绑手机',
+    'invalid verify code': '验证码错误',
+    "PasswordWeak": "密码长度为8-16位，字母、数字或符号两种以上组合",
+    'UserHasBindedPhone': '您已绑定了手机',
+    "CellPhoneBind": '该手机已绑定其它账号，请换一个',
+    "value of required argument can't not be empty": '验证码不能为空',
+    "InvalidEmailCode": '验证码不正确,请重新输入',
+    'InvalidSMSCode': '验证码不正确,请重新输入',
+    'UserHasBindedEmail': '您已绑定了邮箱',
+    "EmailNotExists": '邮箱不存在',
+    "InvalidToken": '不合法的操作',
+    'InvalidNickname': '不能包含字符!@#$^*<>?',
+    'wrongPassword': '密码错误',
+    'chkCodeReset': '打开文件失败，轻地址密码已变更。',
+
+    'commentLengthTooLong': '评论内容超过了255个字符',
+
+    '_shareFail': '分享失败',
+
+    'SpaceFull': '空间已满',
+    'MySpaceFull': '空间已满',
+    'commentTooLong': '评论不能超过255个字',
+    'moveFilesFail': '移动文件失败',
+    'linkClosed': '链接已关闭',
+    'notCompanyMember' : '不是该企业的成员',
+    'noName' : '名字不能为空',
+}

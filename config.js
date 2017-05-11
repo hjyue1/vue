@@ -1,4 +1,4 @@
-module.exports  = {
+window.WPS_CONFIG  = {
     IS_PRIVATIZATION: true,
     YUN_HOST: 'SCHEME://YUN_PREFIX.DOMAIN_TOP',
     DRIVE_HOST: 'SCHEME://YUN_PREFIX.DOMAIN_TOP',
